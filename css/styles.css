@@ -1,0 +1,632 @@
+/*
+https://fonts.google.com/specimen/Roboto?preview.text_type=custom
+https://fonts.google.com/specimen/Press+Start+2P?preview.text_type=custom
+https://fonts.google.com/specimen/VT323?preview.text_type=custom
+https://fonts.google.com/specimen/Bangers?preview.text_type=custom
+https://fonts.google.com/specimen/Rubik+Mono+One?preview.text_type=custom
+
+font-family: 'Roboto', sans-serif;
+font-family: 'Press Start 2P', cursive;
+font-family: 'VT323', monospace;
+font-family: 'Bangers', cursive;
+font-family: 'Rubik Mono One', sans-serif;
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 2rem;
+    font-family: 'VT323', monospace;
+    
+    color: #53305F;
+    background: #fbfbfb;
+
+    /*overflow-x: hidden;*/
+}
+
+*::selection {
+    background-color: #FED337;
+    color: #CC2936;
+}
+
+a{
+    text-decoration: none;
+    color: #53305F;
+}
+
+section{
+    min-height: 100vh;
+}
+
+/************************************************************************************/
+/************************************************************************************/
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    top: 0;
+    position: fixed;
+
+    z-index: 300;
+
+    width: 100vw;
+    height: 80px;
+
+    background: #fdfdfd;
+
+    padding: 15px 25px;
+    padding-top: 10px;
+
+    box-shadow: 0 10px 10px -5px;
+
+    transition: all 0.5s ease-out;
+}
+
+header.headerOpen{
+    top: 0;
+}
+
+.hidden{
+	transform: translate(0, -100%);
+}
+
+header .logo{
+    font-size: 1.5rem;
+    font-family: 'Press Start 2P', cursive;
+
+    cursor: pointer;
+
+    background: rgb(83,48,95);
+background: linear-gradient(0deg, rgba(83,48,95,1) 40%, rgba(196,60,161,1) 79%);
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    transition: all 0.3s ease-out;
+}
+
+header .logo:hover{
+    transform: scaleX(1.15);
+    font-size: 1.4rem;
+}
+
+header .containerEnlaces{
+    display: inline-flex;
+}
+
+header .enlaces{
+    margin-right: 20px;
+}
+
+header a{
+    font-weight: bold;
+    transition: all 0.2s ease-out;
+}
+
+header a:hover{
+    color: #834B95;
+    transform: translate(0, 7px);
+    transform: scaleY(1.7);
+    text-decoration:underline;
+    text-decoration-color: #F4BF01;
+}
+
+
+
+.container-amburguer button{
+    height: 50px;
+    width: 50px;
+    margin: 10px 10px;
+    border-radius: 50%;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    
+    z-index: 200;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.container-amburguer button span{
+    width: 70%;
+    height: 5px;
+    background: #fff;
+    display: block;
+    margin: 5px auto;
+    border-radius: 3px;
+
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.container-amburguer button.open .line-top{
+    animation-name: line-top-animation;
+}
+
+.container-amburguer button.open .line-middle{
+    animation-name: line-middle-animation;
+}
+
+.container-amburguer button.open .line-bottom{
+    animation-name: line-bottom-animation;
+}
+
+
+.container-amburguer button span.line-top{
+    animation-name: line-top-animation-close;
+}
+
+.container-amburguer button span.line-middle{
+    animation-name: line-middle-animation-close;
+}
+
+.container-amburguer button span.line-bottom{
+    animation-name: line-bottom-animation-close;
+}
+
+
+@keyframes line-top-animation{
+    50%, 100%{
+        transform: translateY(10px) rotate(-45deg);
+    }
+}
+
+@keyframes line-middle-animation{
+    0%, 70%{
+        width: 70%;
+    }
+    70%, 100%{
+        width: 0;
+    }
+}
+
+@keyframes line-bottom-animation{
+    50%, 100%{
+        transform: translateY(-10px) rotate(45deg);
+    }
+}
+
+
+
+@keyframes line-top-animation-close{
+    0%{
+        transform: translateY(10px) rotate(-45deg);
+    }
+    50%, 100%{
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+
+@keyframes line-middle-animation-close{
+    0%, 30%{
+        width: 0;
+    }
+    30%, 100%{
+        width: 70%;
+    }
+}
+
+@keyframes line-bottom-animation-close{
+    0%{
+        transform: translateY(-10px) rotate(45deg);
+    }
+    50%, 100%{
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+/************************************************************************************/
+/************************************************************************************/
+
+.aboutme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+    width: 100%;
+
+    padding: 0px 30px;
+
+    background: #53305F;
+
+    color: #fff;
+}
+
+section .elementAbaut{
+    width: 50vw;
+    height: 50vh; /****************************/
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+section .elementAbaut .content-img{
+    position: relative;
+    width: 60%;
+    text-align: center;
+}
+
+
+
+section .elementAbaut .content-img .imgChild{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.aboutme img{
+    width: 100%;
+}
+
+section .elementAbaut .content-img .animationAbout{
+    animation-name: rotacion;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+section .elementAbaut .content-img .imgChild .animationAbout{
+    animation-duration: 6s;
+}
+
+
+
+section .abautContenido{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section .abautContenido a{
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 7px;
+    margin-top: 30px;
+    font-size: 30px;
+
+    transition: all 0.4s ease-out;
+}
+
+section .abautContenido a:hover{
+    color: #53305F;
+    background: #fff;
+    font-weight: bold;
+}
+
+
+@keyframes rotacion{
+    from{
+        transform: rotateZ(0deg);
+    }
+
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+/***********************************************************************************************/
+/***********************************************************************************************/
+
+.containerSkilss{
+    min-height: 100vh;
+    width: 100%;
+    
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    padding: 0 30px;
+    background: #e9bf28;
+
+}
+
+.skillsLogos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin-bottom: 40px;
+}
+
+.skillsLogos .skillsLogo{
+    font-size: 90px;
+    margin: 10px 10px;
+    
+
+    transition: all 1.5s ease-out;
+}
+
+.skillsLogos .skillsLogo:hover{
+    color: #F50045;
+    /*transform: scaleY(1.2);*/
+    transform: rotate3d(0, 1, 0, 360deg);
+}
+
+.skillsText{
+    text-align: center;
+    padding-bottom: 80px;
+    font-weight: bold;
+}
+
+.waveSkills{
+    background: #e9bf28;
+}
+
+/***********************************************************************************************/
+/***********************************************************************************************/
+.containerProjects{
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+.projects{
+    display: flex;
+    /*min-height: 100vh;*/
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 0px 30px;
+    text-align: center;
+}
+
+.projects p{
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.containerProject{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 100%;
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.project{
+    width: 230px;
+    height: 280px;
+
+    margin: 10px;
+    border-radius: 10px;
+    cursor:pointer;
+    position: relative;
+    
+    overflow: hidden;
+
+    transition: all 0.6s;
+
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+    background-image: url(../img/imgProject.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.project:hover{
+    box-shadow: rgba(243, 2, 191, 0.671) 0px 1px 30px 0px, rgba(243, 2, 191, 0.404)0px 1px 3px 1px;
+}
+
+.efect-over-project{
+    width: 0px;
+    height: 0px;
+
+    position: absolute;
+    top: -150px;
+    left: -150px;
+    border-radius: 50%;
+    transition: all 0.7s linear;
+   
+    background: linear-gradient(to right, #8000ff9b, #e100ff9a);
+}
+
+.project:hover .efect-over-project{
+    width: 500px;
+    height: 500px;
+}
+
+
+
+
+
+/***********************************************************************************************/
+/***********************************************************************************************/
+
+.contact{
+    min-height: 100vh;
+    width: 100%;
+    background: #5C5D8D;
+}
+
+.containerForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+.contact form{
+    display: flex;
+    flex-direction: column;
+
+    height: auto;
+    background: #fff;
+    padding: 30px;
+    padding-top: 20px;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin-bottom: 60px;
+}
+
+.contact form:hover button{
+    animation: pulse 3s infinite ease-out 1s;
+}
+
+.contact form h2,
+.contact form input,
+.contact form textarea{
+    margin-bottom: 10px;
+    background: none;
+    font-family: 'VT323', monospace;
+    margin-bottom: 15px;
+}
+
+.contact form h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact form input,
+.contact form textarea,
+.contact form button{
+    padding: 10px;
+    font-size: 23px;
+}
+
+.contact form textarea{
+
+    text-align: justify;
+}
+
+.contact form button{
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 15px;
+
+    font-family: 'VT323', monospace;
+
+    background: #00c6ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+/***********************************************************************************************/
+/***********************************************************************************************/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    height: 25vh;
+
+    text-align: center;
+}
+
+footer div i{
+    font-size: 50px;
+    opacity: 0.85;
+    transform-origin: 35% 30%;
+    animation: pulse .8s infinite ease-out .75s;
+}
+
+@keyframes pulse{
+    10%, 20% {
+        transform: scale(0.9, 0.85) skewX(1deg);
+        opacity: 1;
+    }
+}
+
+
+
+/***********************************************************************************************/
+/***********************************************************************************************/
+
+@media (max-width: 900px){
+    header{
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        z-index: 100;
+        top: -200%
+    }
+    header .containerEnlaces{
+        display: block;
+        margin-top: 10px;
+
+    }
+    header .enlaces{
+        margin-right: 0px;
+    }
+
+    .aboutme{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    section .elementAbaut{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+ 
+    section .elementAbaut .content-img img,
+    section .elementAbaut .content-img .imgChild img{
+        width: 70%;
+    }
+
+    .skillsLogos .skillsLogo{
+        font-size: 60px;
+    }
+
+    .containerProject{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .project{
+        width: 280px;
+        height: 320px;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media (max-width: 500px){
+    header .logo{
+        font-size: 1rem;
+    }
+
+    section .elementAbaut .content-img img,
+    section .elementAbaut .content-img .imgChild img{
+        width: 100%;
+    }
+
+    .contact form{
+        height: 70vh;
+        width: 90%;
+    }
+}
