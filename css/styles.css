@@ -578,6 +578,7 @@ footer div i{
         margin-top: 10px;
 
     }
+
     header .enlaces{
         margin-right: 0px;
     }
@@ -612,17 +613,38 @@ footer div i{
         height: 320px;
         margin-bottom: 10px;
     }
+    .project:hover .efect-over-project{
+        width: 600px;
+        height: 600px;
+    }
 }
 
 
 @media (max-width: 500px){
+    body{
+        font-size: 1.4rem;
+    }
+
     header .logo{
-        font-size: 1rem;
+        font-size: 1.1rem;
+    }
+
+    header .logo:hover{
+        transform: scaleX(0.8);
+        font-size: 1.4rem;
+    }
+
+    header .enlaces{
+        font-size: 2rem;
     }
 
     section .elementAbaut .content-img img,
     section .elementAbaut .content-img .imgChild img{
         width: 100%;
+    }
+
+    section .abautContenido a{
+        font-size: 1.5rem;
     }
 
     .contact form{
