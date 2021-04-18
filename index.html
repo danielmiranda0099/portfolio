@@ -39,16 +39,6 @@
         </header>
 
         <section class="aboutme" id="aboutme">
-            <!--<div class="elementAbaut imgFlex">
-                <div class="abautImg animationAbout">
-                    <img src="./img/sistemaSolar2.png" alt="">
-                    <img src="./img/sistemaSolar1.png" alt="">
-                    <div class="imgChild">
-                        
-                    </div>
-                </div>
-            </div> -->
-
             <div class="elementAbaut">
                 <div class="content-img">
 
@@ -65,7 +55,7 @@
                 <p><h4>Hi, my name is Daniel Miranda Castillo I am a gikk of technology in general, my passion is to create incredible things with programming, I consider myself a craftsman of the code. <i> I am a frontend developer </i>specialized in javascript and its technologies.</h4>
                 </p>
 
-                <a id="idEnlaceSocial" class="animate__animated" href="">show social media</a>
+                <a class="modalBox" data-modal=".container-modalBoxSocialMedia" href="">show social media</a>
             </div>
         </section>
 
@@ -102,24 +92,24 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eligendi dolorum inventore ab nemo quisquam earum quo modi, delectus fugiat numquam corporis optio fuga eius blanditiis ut. Harum aut distinctio dolor eaque commodi odit unde maiores voluptatibus at. Ex cum modi blanditiis dolorum aperiam animi architecto, quod laudantium odit non?</p>
 
             <div class="containerProject">
-                <div class="project">
+                <div class="project modalBox" data-modal=".container-modalBoxProject">
 
-                    <div class="efect-over-project"></div>
+                    <div class="efect-over-project modalBox" data-modal=".container-modalBoxProject"></div>
                 </div>
-                <div class="project">
-                    <div class="efect-over-project"></div>
+                <div class="project modalBox" data-modal=".container-modalBoxProject">
+                    <div class="efect-over-project modalBox" data-modal=".container-modalBoxProject"></div>
                 </div>
-                <div class="project">
-                    <div class="efect-over-project"></div>
+                <div class="project modalBox" data-modal=".container-modalBoxProject">
+                    <div class="efect-over-project modalBox" data-modal=".container-modalBoxProject"></div>
                 </div>
             </div>
             
             <div class="containerProject">
-                <div class="project">
-                    <div class="efect-over-project"></div>
+                <div class="project modalBox" data-modal=".container-modalBoxProject">
+                    <div class="efect-over-project modalBox" data-modal=".container-modalBoxProject"></div>
                 </div>
-                <div class="project">
-                    <div class="efect-over-project"></div>
+                <div class="project modalBox" data-modal=".container-modalBoxProject">
+                    <div class="efect-over-project modalBox" data-modal=".container-modalBoxProject"></div>
                 </div>
             </div>
 
@@ -148,6 +138,33 @@
         
         <p>made with passion by Daniel Miranda Castillo</p>
     </footer>
+
+
+    <!--******************************************************************************-->
+    <!--********************** ALL MODAL WINDOWS *************************************-->
+
+    <div class="container-modalBox container-modalBoxSocialMedia">
+        <div class="modalBoxSocialMedia">
+            <a class="modalClose">x</a>
+
+            <h3>social media en las que me puedes contactar</h3>
+
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, laudantium!</h5>
+
+            <div>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-facebook-square"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-modalBox container-modalBoxProject">
+        <div class="modalBoxProject">
+            <a href="" class="modalClose">x</a>
+        </div>
+    </div>
+
 
     <script src="./js/main.js" type="module"></script>
     <script src="https://kit.fontawesome.com/c4ecc39a04.js" crossorigin="anonymous"></script>
