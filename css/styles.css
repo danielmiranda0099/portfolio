@@ -51,8 +51,9 @@ section{
 
 header{
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    
     
     top: 0;
     position: fixed;
@@ -94,33 +95,42 @@ background: linear-gradient(0deg, rgba(83,48,95,1) 40%, rgba(196,60,161,1) 79%);
     transition: all 0.3s ease-out;
 }
 
-header .logo:hover{
-    transform: scaleX(1.15);
-    font-size: 1.4rem;
+
+
+.containerEnlaces{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-header .containerEnlaces{
-    display: inline-flex;
-}
-
-header .enlaces{
-    margin-right: 20px;
+.containerEnlace{
+    display: flex;
 }
 
 header a{
     font-weight: bold;
+    margin-right: 22px;
     transition: all 0.2s ease-out;
 }
 
 header a:hover{
-    color: #834B95;
-    transform: translate(0, 7px);
-    transform: scaleY(1.7);
-    text-decoration:underline;
-    text-decoration-color: #F4BF01;
+    color: #845195;
 }
 
+.div-enlace{
+    background: #fff;
+    width: 0;
+    height: 4px;
+    border-radius: 15%;
 
+    transition: all 0.5s;
+}
+
+.div-enlacesAnimation{
+    background: #F4BF01;
+    width: 100%;
+}
 
 .container-amburguer button{
     height: 50px;
@@ -322,7 +332,7 @@ section .abautContenido a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(27, 25, 25, 0.8);
     transition: all 0.5s linear;
 
     z-index: 500;
@@ -443,7 +453,10 @@ section .abautContenido a:hover{
     margin: 10px 10px;
     
     color: #977e23;
+}
 
+.skillsLogos .skillsLogo i{
+    filter: drop-shadow(0px 0px 3px rgba(5, 5, 5, 0.4));
 }
 
 .skillsText{
@@ -507,10 +520,27 @@ section .abautContenido a:hover{
 
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     background-image: url(../img/imgProject.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.project i{
+    font-size: 50px;
+    color: #fff;
+    z-index: 10;
+    opacity: 0;
+
+    transition: all .6s;
+}
+
+.project:hover i{
+    opacity: 1;
 }
 
 .project:hover{
@@ -686,6 +716,7 @@ footer div i{
         width: 70%;
     }
 
+    .modalBoxProject,
     .modalBoxSocialMedia{
         width: 75vw;
         height: 70vh;
@@ -738,6 +769,7 @@ footer div i{
         font-size: 1.5rem;
     }
 
+    .modalBoxProject,
     .modalBoxSocialMedia{
         width: 90vw;
         height: 80vh;
