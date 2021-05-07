@@ -350,8 +350,8 @@ section .abautContenido a:hover{
 
 .modalBoxProject,
 .modalBoxSocialMedia{
-    width: 50vw;
-    height: 60vh;
+    width: 55vw;
+    height: 50vh;
 
     background: #fff;
     display: flex;
@@ -366,7 +366,7 @@ section .abautContenido a:hover{
 }
 
 .modalBoxSocialMedia i {
-    font-size: 60px;
+    font-size: 70px;
     margin: 0 20px;
 
     cursor: pointer;
@@ -424,15 +424,16 @@ section .abautContenido a:hover{
 /***********************************************************************************************/
 
 .containerSkilss{
-    min-height: 100vh;
+    min-height: 90vh;
     width: 100%;
     
 }
 
 .skills{
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
     padding: 0 30px;
     background: #e9bf28;
@@ -453,16 +454,70 @@ section .abautContenido a:hover{
     margin: 10px 10px;
     
     color: #977e23;
+
+    opacity: 0.5;
 }
 
 .skillsLogos .skillsLogo i{
-    filter: drop-shadow(0px 0px 3px rgba(5, 5, 5, 0.4));
+    filter: drop-shadow(1px 2px  rgba(83, 48, 95));
+    
 }
 
 .skillsText{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
     text-align: center;
-    padding-bottom: 80px;
+}
+
+.skillsText p{
     font-weight: bold;
+}
+
+.content-items-skills{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    width: 60%;
+
+    color: #e9bf28;
+
+    margin: 30px 20px;
+}
+
+
+.item-skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:#53305F;
+    margin: 10px;
+    padding: 3px;
+    border-radius: 15px;
+}
+
+.item-skill h4{
+    font-size: 22px;
+    margin-right: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.ball-skill{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0px 5px;
+
+    background: #FF8008;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFC837, #FF8008);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFC837, #FF8008); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .waveSkills{
@@ -492,6 +547,16 @@ section .abautContenido a:hover{
 .projects p{
     font-weight: bold;
     margin-bottom: 30px;
+}
+
+.projects span{
+    font-weight: normal;
+    font-size: 28px;
+}
+
+.go-gitHub{
+    color: #f642cf;
+    text-decoration: underline;
 }
 
 .containerProject{
@@ -574,7 +639,7 @@ section .abautContenido a:hover{
 /***********************************************************************************************/
 
 .contact{
-    min-height: 100vh;
+    min-height: 90vh;
     width: 100%;
     background: #5C5D8D;
 }
@@ -583,15 +648,14 @@ section .abautContenido a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-
-    height: 100vh;
 }
 
 .contact form{
     display: flex;
     flex-direction: column;
 
-    height: auto;
+    width: 35%;
+    height: aunto;
     background: #fff;
     padding: 30px;
     padding-top: 20px;
@@ -680,23 +744,36 @@ footer div i{
 /***********************************************************************************************/
 /***********************************************************************************************/
 
-@media (max-width: 900px){
+@media (max-width: 950px){
     header{
         height: 100vh;
         flex-direction: column;
         justify-content: center;
         text-align: center;
         z-index: 100;
-        top: -200%
+        top: -200%;
+
+        background: rgb(83,48,95);
+background: linear-gradient(0deg, rgba(83,48,95,1) 14%, rgba(208,79,175,1) 98%);    
     }
+
+    header .logo{
+        filter: drop-shadow(1px 1px 3px rgb(255,255,255));
+    }
+
     header .containerEnlaces{
-        display: block;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
         margin-top: 10px;
 
     }
 
     header .enlaces{
         margin-right: 0px;
+        margin-top: 10px;
+
+        color: #fff;
     }
 
     .aboutme{
@@ -722,8 +799,26 @@ footer div i{
         height: 70vh;
     }
 
+    .skills{
+        padding: 0 5px;
+    }
+
     .skillsLogos .skillsLogo{
         font-size: 60px;
+    }
+
+    .content-items-skills{
+        margin: 5px;
+        width: 90%;
+    }
+
+    .item-skill h4{
+        font-size: 14px;
+    }
+
+    .ball-skill{
+        width: 10px;
+        height: 10px;
     }
 
     .containerProject{
@@ -735,9 +830,17 @@ footer div i{
         height: 320px;
         margin-bottom: 10px;
     }
+
+    .projects span{
+        font-size: 22px;
+    }
     .project:hover .efect-over-project{
         width: 600px;
         height: 600px;
+    }
+
+    .contact form{
+        width: 60%;
     }
 }
 
@@ -772,7 +875,7 @@ footer div i{
     .modalBoxProject,
     .modalBoxSocialMedia{
         width: 90vw;
-        height: 80vh;
+        height: 65vh;
     }
 
     .contact form{
