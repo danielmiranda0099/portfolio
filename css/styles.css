@@ -581,6 +581,10 @@ background: linear-gradient(to right, #FFC837, #FF8008); /* W3C, IE 10+/ Edge, F
     background-position: center;
 }
 
+.title-project{
+    color: rgba(83, 48, 95, 0.9);
+}
+
 .project i{
     font-size: 50px;
     color: #fff;
