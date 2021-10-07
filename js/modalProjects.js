@@ -22,7 +22,8 @@ const projects = [
         "name": "Todo List",
         "descriptions": "Aplicacion web donde puedes guardar las tareas pendientes.",
         "image": "https://raw.githubusercontent.com/danielmiranda0099/portfolio/master/img/img-projects/todo-list.PNG",
-        "link": "https://github.com/danielmiranda0099",
+        "linkWeb": "https://danielmiranda0099.github.io/listsTasks/",
+        "linkGithub": "https://github.com/danielmiranda0099/listsTasks",
         "icons": '<i class="fab fa-js"></i><i class="fab fa-css3-alt"></i></i><i class="fab fa-html5"></i>'
     }
 ]
