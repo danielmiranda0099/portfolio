@@ -3,7 +3,7 @@ const projects = [
         "id": "weatherApp",
         "name": "Weather App",
         "descriptions": "Este proyecto esta construido en React, se consumio la API <a href='https://openweathermap.org/' target='_blank'><i>open wheader</i></a> para obtener los datos del clima de las ciudades.",
-        "image": "../../img/img-projects/weather-app.PNG",
+        "image": "https://raw.githubusercontent.com/danielmiranda0099/portfolio/master/img/img-projects/weather-app.PNG",
         "linkWeb": "https://danielmiranda0099.github.io/wheather-app-react/",
         "linkGithub": "https://github.com/danielmiranda0099/wheather-app-react",
         "icons": '<i class="fab fa-react"><i class="fab fa-js"></i><i class="fab fa-css3-alt"></i></i><i class="fab fa-html5"></i>'
@@ -12,7 +12,7 @@ const projects = [
         "id": "countryQuiz",
         "name": "Country Quiz",
         "descriptions": "Esta aplicacion esta contruida en React, country quiz es un juego en el cual por medio de preguntas se evalua que tanto saben las personas de las capitales de los paises.",
-        "image": "../../img/img-projects/country-quiz.png",
+        "image": "https://raw.githubusercontent.com/danielmiranda0099/portfolio/master/img/img-projects/country-quiz.png",
         "linkWeb": "https://danielmiranda0099.github.io/country-quiz-app/",
         "linkGithub": "https://github.com/danielmiranda0099/country-quiz-app",
         "icons": '<i class="fab fa-react"><i class="fab fa-js"></i><i class="fab fa-css3-alt"></i></i><i class="fab fa-html5"></i>'
@@ -21,7 +21,7 @@ const projects = [
         "id": "todoList",
         "name": "Todo List",
         "descriptions": "Aplicacion web donde puedes guardar las tareas pendientes.",
-        "image": "../../img/img-projects/todo-list.png",
+        "image": "https://raw.githubusercontent.com/danielmiranda0099/portfolio/master/img/img-projects/todo-list.png",
         "link": "https://github.com/danielmiranda0099",
         "icons": '<i class="fab fa-js"></i><i class="fab fa-css3-alt"></i></i><i class="fab fa-html5"></i>'
     }
