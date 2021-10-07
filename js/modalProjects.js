@@ -12,7 +12,7 @@ const projects = [
         "id": "countryQuiz",
         "name": "Country Quiz",
         "descriptions": "Esta aplicacion esta contruida en React, country quiz es un juego en el cual por medio de preguntas se evalua que tanto saben las personas de las capitales de los paises.",
-        "image": "https://raw.githubusercontent.com/danielmiranda0099/portfolio/master/img/img-projects/country-quiz.png",
+        "image": "https://raw.githubusercontent.com/danielmiranda0099/portfolio/master/img/img-projects/country-quiz.PNG",
         "linkWeb": "https://danielmiranda0099.github.io/country-quiz-app/",
         "linkGithub": "https://github.com/danielmiranda0099/country-quiz-app",
         "icons": '<i class="fab fa-react"><i class="fab fa-js"></i><i class="fab fa-css3-alt"></i></i><i class="fab fa-html5"></i>'
@@ -21,7 +21,7 @@ const projects = [
         "id": "todoList",
         "name": "Todo List",
         "descriptions": "Aplicacion web donde puedes guardar las tareas pendientes.",
-        "image": "https://raw.githubusercontent.com/danielmiranda0099/portfolio/master/img/img-projects/todo-list.png",
+        "image": "https://raw.githubusercontent.com/danielmiranda0099/portfolio/master/img/img-projects/todo-list.PNG",
         "link": "https://github.com/danielmiranda0099",
         "icons": '<i class="fab fa-js"></i><i class="fab fa-css3-alt"></i></i><i class="fab fa-html5"></i>'
     }
