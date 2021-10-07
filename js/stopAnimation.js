@@ -9,7 +9,7 @@ export function stopAnimation(id, valueScroll){
 
         let scroll = d.documentElement.scrollTop;
 
-        if(scroll >= valueScroll && scroll <= valueScroll+100){
+        if(scroll <= valueScroll){
 
             $element.forEach( el => el.classList.add("animationAbout"));
         }

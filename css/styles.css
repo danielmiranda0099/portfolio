@@ -18,6 +18,13 @@ body{
     /*overflow-x: hidden;*/
 }
 
+.flex-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 *::selection {
     background-color: #FED337;
     color: #CC2936;
@@ -97,7 +104,7 @@ background: linear-gradient(0deg, rgba(83,48,95,1) 40%, rgba(196,60,161,1) 79%);
 header a{
     font-weight: bold;
     margin-right: 22px;
-    transition: all 0.2s ease-out;
+    transition: color 0.3s ease-out;
 }
 
 header a:hover{
@@ -110,7 +117,7 @@ header a:hover{
     height: 4px;
     border-radius: 15%;
 
-    transition: all 0.5s;
+    transition: width 0.7s;
 }
 
 .div-enlacesAnimation{
@@ -351,7 +358,7 @@ section .abautContenido a:hover{
     padding: 25px;
 }
 
-.modalBoxSocialMedia i {
+.modal-social-icon {
     font-size: 70px;
     margin: 0 20px;
 
@@ -370,22 +377,20 @@ section .abautContenido a:hover{
 }
 
 .modalClose{
-    font-family: 'Roboto', sans-serif;
     position: absolute;
     top: 0;
     right: 0;
 
-    margin-top: -10px;
+    
     margin-right: 5px;
 
     font-size: 40px;
-    font-weight: bold;
 
     padding: 3px;
 
     cursor: pointer;
 
-    transition: all .5s;
+    transition: background-color .5s;
 }
 
 .modalClose:hover{
@@ -513,18 +518,19 @@ background: linear-gradient(to right, #FFC837, #FF8008); /* W3C, IE 10+/ Edge, F
 /***********************************************************************************************/
 /***********************************************************************************************/
 .containerProjects{
-    min-height: 100vh;
+    min-height: 50vh;
     width: 100%;
 }
 
 
 .projects{
     display: flex;
-    /*min-height: 100vh;*/
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+
+    min-height: 50vh;
 
     padding: 0px 30px;
     text-align: center;
@@ -546,14 +552,12 @@ background: linear-gradient(to right, #FFC837, #FF8008); /* W3C, IE 10+/ Edge, F
 }
 
 .containerProject{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+   display: grid;
+   grid-template-columns: repeat(3, auto);
+   justify-content: center;
+   align-items: flex-start;
 
-    width: 100%;
-    
-    margin-top: 10px;
-    margin-bottom: 10px;
+   width: 100%;
 }
 
 .project{
@@ -575,7 +579,7 @@ background: linear-gradient(to right, #FFC837, #FF8008); /* W3C, IE 10+/ Edge, F
     justify-content: center;
     align-items: center;
 
-    background-image: url(../img/imgProject.jpg);
+    /*background-image: url(../img/imgProject.jpg);*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -618,6 +622,38 @@ background: linear-gradient(to right, #FFC837, #FF8008); /* W3C, IE 10+/ Edge, F
 .project:hover .efect-over-project{
     width: 500px;
     height: 500px;
+}
+
+.description-project{
+    font-size: 28px;
+}
+
+.description-project a {
+    text-decoration:underline;
+}
+
+.project-link * {
+    color: #f572d9;
+    font-size: 25px;
+    cursor: pointer;
+
+    margin: 0 6px;
+}
+
+.project-link a{
+    text-decoration:underline;
+}
+
+.icon-project{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-project i{
+    font-size: 38px;
+    margin: 0px 7px;
 }
 
 
@@ -825,6 +861,8 @@ background: linear-gradient(0deg, rgba(83,48,95,1) 14%, rgba(208,79,175,1) 98%);
     }
 
     .containerProject{
+        grid-template-columns: repeat(2, auto);
+
         margin-top: 0px;
         margin-bottom: 0px;
     }
@@ -848,7 +886,7 @@ background: linear-gradient(0deg, rgba(83,48,95,1) 14%, rgba(208,79,175,1) 98%);
 }
 
 
-@media (max-width: 500px){
+@media (max-width: 660px){
     body{
         font-size: 1.4rem;
     }
@@ -875,10 +913,26 @@ background: linear-gradient(0deg, rgba(83,48,95,1) 14%, rgba(208,79,175,1) 98%);
         font-size: 1.5rem;
     }
 
+    .containerProject{
+        grid-template-columns: repeat(1, auto);
+    }
+
     .modalBoxProject,
     .modalBoxSocialMedia{
-        width: 90vw;
-        height: 65vh;
+        width: 95vw;
+        height: 55vh;
+    }
+
+    .title-project{
+        font-size: 30px;
+    }
+
+    .description-project{
+        font-size: 20px;
+    }
+
+    .project-link *{
+        font-size: 18px;
     }
 
     .contact form{

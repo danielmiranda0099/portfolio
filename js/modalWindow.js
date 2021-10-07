@@ -12,12 +12,10 @@ export function modalWindow(){
         if(e.target.matches('.modalClose')){
             e.target.parentElement.parentElement.classList.remove('modalOpen');
             e.preventDefault();
-            console.log('cerrando');
         }
 
         if(e.target.matches('.modalCloseLink *')){
             e.target.parentElement.parentElement.parentElement.parentElement.classList.remove('modalOpen');
-            console.log('cerrando xd');
         }
         
     });
