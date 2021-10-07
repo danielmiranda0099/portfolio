@@ -3,7 +3,7 @@ const projects = [
         "id": "weatherApp",
         "name": "Weather App",
         "descriptions": "Este proyecto esta construido en React, se consumio la API <a href='https://openweathermap.org/' target='_blank'><i>open wheader</i></a> para obtener los datos del clima de las ciudades.",
-        "image": "../../img/img-projects/weather-app.png",
+        "image": "../../img/img-projects/weather-app.PNG",
         "linkWeb": "https://danielmiranda0099.github.io/wheather-app-react/",
         "linkGithub": "https://github.com/danielmiranda0099/wheather-app-react",
         "icons": '<i class="fab fa-react"><i class="fab fa-js"></i><i class="fab fa-css3-alt"></i></i><i class="fab fa-html5"></i>'
