@@ -18,11 +18,36 @@ body{
     /*overflow-x: hidden;*/
 }
 
-.flex-row{
+.flex{
     display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.flex-center{
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+}
+
+.is-total-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    z-index: 1000;
+
+    width: 100%;
+    height: 100vh;
+
+    background-color: #53305F;
+
+    transition: visibility 1s ease;
+}
+
+.is-total-modal.is-invisible{
+    visibility: hidden;
 }
 
 *::selection {

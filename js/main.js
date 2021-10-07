@@ -4,10 +4,13 @@ import {btnAmburguer} from "./btn-amburguer.js";
 import {modalWindow} from "./modalWindow.js";
 import {animationEnlacesNav} from "./animationEnlacesNav.js";
 import { cardProjects, modalProjects } from "./modalProjects.js";
+import { preloaderPage } from "./preloaderPage.js";
 
 const d = document;
 
 d.addEventListener("DOMContentLoaded", (e) => {
+    preloaderPage();
+
     cardProjects();
     modalProjects();
     
