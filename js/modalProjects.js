@@ -2,7 +2,7 @@ const projects = [
     {
         "id": "weatherApp",
         "name": "Weather App",
-        "descriptions": "Este proyecto esta construido en React, se consumio la API <a href='https://openweathermap.org/' target='_blank'><i>open wheader</i></a> para obtener los datos del clima de las ciudades.",
+        "descriptions": "Este proyecto está construido sobre React, para obtener los datos del clima de las ciudades la página consume los dados proporcionados por la API de <a href='https://openweathermap.org/' target='_blank'><i>open wheader</i></a>",
         "image": "https://raw.githubusercontent.com/danielmiranda0099/portfolio/master/img/img-projects/weather-app.PNG",
         "linkWeb": "https://danielmiranda0099.github.io/wheather-app-react/",
         "linkGithub": "https://github.com/danielmiranda0099/wheather-app-react",
@@ -11,7 +11,7 @@ const projects = [
     {
         "id": "countryQuiz",
         "name": "Country Quiz",
-        "descriptions": "Esta aplicacion esta contruida en React, country quiz es un juego en el cual por medio de preguntas se evalua que tanto saben las personas de las capitales de los paises.",
+        "descriptions": "Esta aplicación esta construida sobre React, country quiz es un juego en el cual por medio de preguntas se evalúa que tanto saben las personas de las capitales de los países.",
         "image": "https://raw.githubusercontent.com/danielmiranda0099/portfolio/master/img/img-projects/country-quiz.PNG",
         "linkWeb": "https://danielmiranda0099.github.io/country-quiz-app/",
         "linkGithub": "https://github.com/danielmiranda0099/country-quiz-app",
@@ -20,7 +20,7 @@ const projects = [
     {
         "id": "todoList",
         "name": "Todo List",
-        "descriptions": "Aplicacion web donde puedes guardar las tareas pendientes.",
+        "descriptions": "Aplicación web donde puedes guardar y gestionar las tareas pendientes.",
         "image": "https://raw.githubusercontent.com/danielmiranda0099/portfolio/master/img/img-projects/todo-list.PNG",
         "linkWeb": "https://danielmiranda0099.github.io/listsTasks/",
         "linkGithub": "https://github.com/danielmiranda0099/listsTasks",

@@ -1,7 +1,7 @@
 
 const d = document;
 export function preloaderPage() {
-    setTimeout(() => {
+    window.onload = function () {
         d.querySelector('.is-total-modal').classList.add('is-invisible');
-    }, 1200);
+    }
 }

@@ -7,17 +7,17 @@
   .preloader > :nth-child(1) {
     height: inherit;
     width: inherit;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
   }
   .preloader > :nth-child(2) {
     height: 150px;
     width: 150px;
-    animation-duration: 2.5s;
+    animation-duration: 2s;
   }
   .preloader > :nth-child(3) {
     height: 80px;
     width: 80px;
-    animation-duration: 3s;
+    animation-duration: 2.5s;
   }
   .preloader > div {
     animation-name: rotate;
